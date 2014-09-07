@@ -597,45 +597,4 @@ namespace Mod {
             }
         }
     }
-    /*int playerAmount;
-    Vector2[] item = new Vector2[4];
-    List<Vector2> xMLPositions = this.Session.CurrentLevel.GetXMLPositions("PlayerSpawn");
-    xMLPositions.Shuffle<Vector2>(new Random());
-    if (this.Session.IsInOvertime)
-    {
-        int highestScore = this.Session.GetHighestScore();
-        playerAmount = 0;
-        for (int i = 0; i < 4; i++)
-        {
-            if (TFGame.Players[i] && this.Session.Scores[i] == highestScore)
-            {
-                playerAmount++;
-            }
-        }
-    }
-    else
-    {
-        playerAmount = TFGame.PlayerAmount;
-    }
-    int num = 0;
-    for (int j = 0; j < 4; j++)
-    {
-        if (this.Session.ShouldSpawn(j))
-        {
-            item[j] = xMLPositions[num] + (Vector2.UnitY * 2f);
-            Player player;
-            if (j < 2) player = new Player(j, item[j], Allegiance.Neutral, Allegiance.Neutral, this.Session.GetPlayerInventory(j), this.Session.GetSpawnHatState(j), true);
-            else player = new Player(j, item[j], Allegiance.Red, Allegiance.Red, this.Session.GetPlayerInventory(j), this.Session.GetSpawnHatState(j), true);
-            this.Session.CurrentLevel.Add<Player>(player);
-            if (num == 0 && playerAmount == 2 && xMLPositions[0].X != 160f)
-            {
-                Vector2 vector2 = WrapMath.Opposite(xMLPositions[0]);
-                if (xMLPositions.Contains(vector2))
-                {
-                    xMLPositions[1] = vector2;
-                }
-            }
-            num++;
-        }
-    }*/
 }
