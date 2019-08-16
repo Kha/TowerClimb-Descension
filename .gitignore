@@ -1,2 +1,7 @@
 bin/
+DevMod/obj/
+Mod/obj/
+Patcher/obj/
+Wizard/obj/
+.vs/
 *.userprefs
