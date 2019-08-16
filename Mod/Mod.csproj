@@ -89,7 +89,4 @@
       <Name>Patcher</Name>
     </ProjectReference>
   </ItemGroup>
-  <Target Name="AfterBuild">
-    <Exec Command="../bin/Patcher.exe patch Mod.dll" WorkingDirectory="../bin" />
-  </Target>
 </Project>

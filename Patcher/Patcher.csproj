@@ -40,7 +40,4 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild">
-    <Exec Command="../bin/Patcher.exe makeBaseImage" WorkingDirectory="../bin" />
-  </Target>
 </Project>
